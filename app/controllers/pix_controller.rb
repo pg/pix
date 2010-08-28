@@ -1,0 +1,2 @@
+class PixController < ApplicationController
+end

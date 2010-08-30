@@ -1,0 +1,64 @@
+<h1>Editing game</h1>
+
+<% form_for(@game) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :date %><br />
+    <%= f.datetime_select :date %>
+  </p>
+  <p>
+    <%= f.label :home %><br />
+    <%= f.text_field :home %>
+  </p>
+  <p>
+    <%= f.label :away %><br />
+    <%= f.text_field :away %>
+  </p>
+  <p>
+    <%= f.label :score_q1_home %><br />
+    <%= f.text_field :score_q1_home %>
+  </p>
+  <p>
+    <%= f.label :score_q1_away %><br />
+    <%= f.text_field :score_q1_away %>
+  </p>
+  <p>
+    <%= f.label :score_q2_home %><br />
+    <%= f.text_field :score_q2_home %>
+  </p>
+  <p>
+    <%= f.label :score_q2_away %><br />
+    <%= f.text_field :score_q2_away %>
+  </p>
+  <p>
+    <%= f.label :score_q3_home %><br />
+    <%= f.text_field :score_q3_home %>
+  </p>
+  <p>
+    <%= f.label :score_q3_away %><br />
+    <%= f.text_field :score_q3_away %>
+  </p>
+  <p>
+    <%= f.label :score_q4_home %><br />
+    <%= f.text_field :score_q4_home %>
+  </p>
+  <p>
+    <%= f.label :score_q4_away %><br />
+    <%= f.text_field :score_q4_away %>
+  </p>
+  <p>
+    <%= f.label :current_quarter %><br />
+    <%= f.text_field :current_quarter %>
+  </p>
+  <p>
+    <%= f.label :time %><br />
+    <%= f.time_select :time %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @game %> |
+<%= link_to 'Back', games_path %>

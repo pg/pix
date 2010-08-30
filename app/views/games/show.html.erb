@@ -1,0 +1,68 @@
+<p>
+  <b>Date:</b>
+  <%=h @game.date %>
+</p>
+
+<p>
+  <b>Home:</b>
+  <%=h @game.home %>
+</p>
+
+<p>
+  <b>Away:</b>
+  <%=h @game.away %>
+</p>
+
+<p>
+  <b>Score q1 home:</b>
+  <%=h @game.score_q1_home %>
+</p>
+
+<p>
+  <b>Score q1 away:</b>
+  <%=h @game.score_q1_away %>
+</p>
+
+<p>
+  <b>Score q2 home:</b>
+  <%=h @game.score_q2_home %>
+</p>
+
+<p>
+  <b>Score q2 away:</b>
+  <%=h @game.score_q2_away %>
+</p>
+
+<p>
+  <b>Score q3 home:</b>
+  <%=h @game.score_q3_home %>
+</p>
+
+<p>
+  <b>Score q3 away:</b>
+  <%=h @game.score_q3_away %>
+</p>
+
+<p>
+  <b>Score q4 home:</b>
+  <%=h @game.score_q4_home %>
+</p>
+
+<p>
+  <b>Score q4 away:</b>
+  <%=h @game.score_q4_away %>
+</p>
+
+<p>
+  <b>Current quarter:</b>
+  <%=h @game.current_quarter %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%=h @game.time %>
+</p>
+
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>

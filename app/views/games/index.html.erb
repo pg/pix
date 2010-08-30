@@ -1,0 +1,44 @@
+<h1>Listing games</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Home</th>
+    <th>Away</th>
+    <th>Score q1 home</th>
+    <th>Score q1 away</th>
+    <th>Score q2 home</th>
+    <th>Score q2 away</th>
+    <th>Score q3 home</th>
+    <th>Score q3 away</th>
+    <th>Score q4 home</th>
+    <th>Score q4 away</th>
+    <th>Current quarter</th>
+    <th>Time</th>
+  </tr>
+
+<% @games.each do |game| %>
+  <tr>
+    <td><%=h game.date %></td>
+    <td><%=h game.home %></td>
+    <td><%=h game.away %></td>
+    <td><%=h game.score_q1_home %></td>
+    <td><%=h game.score_q1_away %></td>
+    <td><%=h game.score_q2_home %></td>
+    <td><%=h game.score_q2_away %></td>
+    <td><%=h game.score_q3_home %></td>
+    <td><%=h game.score_q3_away %></td>
+    <td><%=h game.score_q4_home %></td>
+    <td><%=h game.score_q4_away %></td>
+    <td><%=h game.current_quarter %></td>
+    <td><%=h game.time %></td>
+    <td><%= link_to 'Show', game %></td>
+    <td><%= link_to 'Edit', edit_game_path(game) %></td>
+    <td><%= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New game', new_game_path %>

@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2010-08-29 23:20:18
+  home: MyString
+  away: MyString
+  score_q1_home: 1
+  score_q1_away: 1
+  score_q2_home: 1
+  score_q2_away: 1
+  score_q3_home: 1
+  score_q3_away: 1
+  score_q4_home: 1
+  score_q4_away: 1
+  current_quarter: 1
+  time: 2010-08-29 23:20:18
+
+two:
+  date: 2010-08-29 23:20:18
+  home: MyString
+  away: MyString
+  score_q1_home: 1
+  score_q1_away: 1
+  score_q2_home: 1
+  score_q2_away: 1
+  score_q3_home: 1
+  score_q3_away: 1
+  score_q4_home: 1
+  score_q4_away: 1
+  current_quarter: 1
+  time: 2010-08-29 23:20:18

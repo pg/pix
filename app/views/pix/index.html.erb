@@ -1,0 +1,10 @@
+<h1>Live games</h1>
+<% for game in @games -%>
+  <div class="game">
+    <%=h game.home %> vs. <%=h game.away %>
+    <div class="status">
+      <span class="time">Time: <%= game.time %></span>
+      <span class="current_quarter">Quarter: <%= game.current_quarter %></span>
+    </div>
+  </div>
+<% end %>

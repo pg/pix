@@ -6,6 +6,10 @@ class Game < ActiveRecord::Base
   validate :current_quarter_not_negative
   validate :no_self_matches
   
+  def self.find_live_games
+    find(:all)
+  end
+  
   protected
     def scores_not_negative
       errors.add(:score_q1_home, 'should not be negative') if score_q1_home.nil? || score_q1_home < 0

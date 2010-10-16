@@ -1,10 +1,36 @@
 <h1>Live games</h1>
 <% for game in @games -%>
   <div class="game">
-    <%=h game.home %> vs. <%=h game.away %>
+    <div class="teams"><%=h game.home %> <i>vs.</i> <%=h game.away %></div>
     <div class="status">
       <span class="time">Time: <%= game.time %></span>
       <span class="current_quarter">Quarter: <%= game.current_quarter %></span>
     </div>
+    <div class="score">
+      <table>
+        <tr>
+          <td/>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td><%=h game.home %></td>
+          <td><%= game.score_q1_home %></td>
+          <td><%= game.score_q2_home %></td>
+          <td><%= game.score_q3_home %></td>
+          <td><%= game.score_q4_home %></td>
+        </tr>
+        <tr>
+          <td><%=h game.away %></td>
+          <td><%= game.score_q1_away %></td>
+          <td><%= game.score_q2_away %></td>
+          <td><%= game.score_q3_away %></td>
+          <td><%= game.score_q4_away %></td>
+        </tr>
+      </table>
+    </div>
   </div>
+  <br>
 <% end %>
